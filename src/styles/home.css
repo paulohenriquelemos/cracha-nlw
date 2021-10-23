@@ -1,0 +1,185 @@
+html, body {
+    --black: hsl(240, 6%, 13%);
+    --gray: hsla(240, 9%, 89%, 1);
+
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased; 
+}
+body {
+    /* height: 100%; */
+    background: #000;
+    display: grid;
+    place-items: center;
+    /* position: relative; */
+}
+main {
+    /* position: relative; */
+    /* display: block; */
+    background: url(../images/background.png);
+    width: 375px;
+    /* height: 812px; */
+    padding-bottom: 40px;
+    /* border: 1px solid transparent; */
+    z-index: 1;
+}
+
+.container {
+    /* height: 100%; */
+    max-width: 250px;
+    /* margin-top: 11.5rem; */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    color: var(--gray);
+}
+
+.avatar {
+    width: 10rem;
+    padding-top: 11.5rem;
+    margin: 0 auto;
+
+    position: relative;
+}
+
+.avatar span {
+    position: absolute;
+    left: 0;
+    margin-top: 11.5rem;
+    top: -15px;
+    z-index: 1;
+}
+/* o sinal de maior ">" faz com que aplique somente a filhos diretos de avatar, e não pegará netos e por ai vai */
+.avatar > img {
+    width: 10rem;
+    height: 11.5rem;
+    /* object-fit: cover; faz com que a imagem não fique esticada, ela preenche todo o espaço sem esticar, similar ao overflow hidden */
+    object-fit: cover;
+
+    /* para fazer o poligono exagonal na imagem
+        https://bennettfeely.com/clippy/
+    */
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+h1 {
+    font-size: 1.5rem;
+/* 24/16 = 1.5rem para converter px para rem basta pegar o px e dividir por 16 */
+    margin-top: 1.5rem;
+}
+
+a {
+    /* margin-top: 0.25rem; */
+    color: var(--gray);
+    text-decoration: none;
+
+    margin-top: 0.25rem;
+
+    display: flex;
+/* 12/16 = 0.75rem */
+    gap: 0.75rem;
+
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    margin-top: 2rem;
+    line-height: 1.5rem;
+}
+
+ul {
+    margin-top: 4rem;
+
+    list-style: none;
+    padding: 0;
+
+    display: flex;
+/* 8/16 = 0.5rem */
+    gap: 0.5rem;
+
+    justify-content: center;
+}
+
+
+@media only screen and (min-width: 500px){
+    body {
+        display: block;
+        overflow-x: hidden;
+    }
+    #root {
+        display: flex;
+        justify-content: center;
+    }
+    .degrade1 {
+        position: absolute;
+        /* top: -200px; */
+        /* top: -50%; */
+        /* left: 0%; */
+        /* width: 69.875rem; */
+        /* height: 69.875rem; */
+        /* opacity: 0.6; */
+        border-radius: 50%;
+        background: radial-gradient(50% 50% at 50% 50%, #FF3D6E 0%, rgba(18, 18, 20, 0) 100%);
+        transform: rotate(-180deg);
+        z-index: 0;
+    }
+    .degrade2 {
+        position: absolute;
+        /* top: -500px; */
+        /* right: 0; */
+        /* width: 69.875rem; */
+        /* height: 69.875rem; */
+        /* opacity: 0.6; */
+        border-radius: 50%;
+        background: radial-gradient(50% 50% at 50% 50%, #FFC323 0%, rgba(18, 18, 20, 0) 100%);
+        transform: rotate(-180deg);
+        z-index: 0;
+    }
+    .faixa {
+        position: absolute;
+        width: 4rem;
+        height: 9.875rem;
+        top: 0px;
+        left:0;
+        right:0;
+        margin-left:auto;
+        margin-right:auto;
+        background: linear-gradient(161.24deg, #FF008E -15.25%, #FFCD1E 111.89%);
+    }
+    .quebra {
+        position: absolute;
+        width: 5rem;
+        height: 0.5rem;
+        top: 156px;
+        left:0;
+        right:0;
+        margin-left:auto;
+        margin-right:auto;
+        background: #121214;
+    }
+
+    h1 {
+        margin-top: 0.7rem;
+    }
+    main {
+        margin-top: 8.75rem;
+        width: 22.375rem;
+        /* height: 36.75rem; */
+        background: url(../images/mask.png);
+        background-color: #202024;
+        background-repeat: no-repeat;
+    }
+    .avatar {
+        padding-top: 4rem;
+    }
+    .avatar span{
+        margin-top: 4rem;
+    }
+
+    ul {
+        margin-top: 2.5rem;
+    }
+}
+ 
