@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/cracha-nlw/static/css/main.5430ed25.chunk.css",
+    "main.js": "/cracha-nlw/static/js/main.5936e0bb.chunk.js",
+    "main.js.map": "/cracha-nlw/static/js/main.5936e0bb.chunk.js.map",
+    "runtime-main.js": "/cracha-nlw/static/js/runtime-main.7ce7acad.js",
+    "runtime-main.js.map": "/cracha-nlw/static/js/runtime-main.7ce7acad.js.map",
+    "static/js/2.8a05ed9b.chunk.js": "/cracha-nlw/static/js/2.8a05ed9b.chunk.js",
+    "static/js/2.8a05ed9b.chunk.js.map": "/cracha-nlw/static/js/2.8a05ed9b.chunk.js.map",
+    "index.html": "/cracha-nlw/index.html",
+    "static/css/main.5430ed25.chunk.css.map": "/cracha-nlw/static/css/main.5430ed25.chunk.css.map",
+    "static/js/2.8a05ed9b.chunk.js.LICENSE.txt": "/cracha-nlw/static/js/2.8a05ed9b.chunk.js.LICENSE.txt",
+    "static/media/home.css": "/cracha-nlw/static/media/mask.abaa2631.svg",
+    "static/media/facebook.bf610110.svg": "/cracha-nlw/static/media/facebook.bf610110.svg",
+    "static/media/github.87f5dd49.svg": "/cracha-nlw/static/media/github.87f5dd49.svg",
+    "static/media/instagram.ffe538aa.svg": "/cracha-nlw/static/media/instagram.ffe538aa.svg",
+    "static/media/selo.70fe4b5a.svg": "/cracha-nlw/static/media/selo.70fe4b5a.svg",
+    "static/media/twitter.d6562433.svg": "/cracha-nlw/static/media/twitter.d6562433.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7ce7acad.js",
+    "static/js/2.8a05ed9b.chunk.js",
+    "static/css/main.5430ed25.chunk.css",
+    "static/js/main.5936e0bb.chunk.js"
+  ]
+}
